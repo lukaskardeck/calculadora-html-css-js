@@ -106,3 +106,15 @@ button {
     width: auto;
     border-radius: 1.5rem;
 }
+
+.num:hover, .deletar:hover, .resetar:hover, .ponto:hover {
+    background-color: #312f2c;
+}
+
+.operador:active {
+    background-color: #ff9500;
+}
+
+.igual:active {
+    background-color: #c02400;
+}

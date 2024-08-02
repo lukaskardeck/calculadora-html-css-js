@@ -62,25 +62,27 @@ button {
     padding-right: 16px;
     padding-top: 5px;
     padding-bottom: 5px;
+    height: 30px;
 }
 
 .displayMaior {
-    font-size: 42px;
+    font-size: 32px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    height: 40px;
 }
 
 .opIgual {
     color: #9e9e9e;
     grid-column: span 1;
     text-align: center;
+    padding-right: 5px;
 }
 
 .resultado {
-    width: 100%;
     grid-column: span 3;
     text-align: end;
-    padding-right: 16px;
+    padding-right: 20px;
 }
 
 .teclado {

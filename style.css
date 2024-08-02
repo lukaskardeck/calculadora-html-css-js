@@ -52,8 +52,8 @@ button {
 
 .display {
     display: grid;
-    /*flex-direction: column;*/
     margin-bottom: 10px;
+    background-color: #535353;
 }
 
 .displayMenor {

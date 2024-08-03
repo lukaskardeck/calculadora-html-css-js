@@ -70,7 +70,9 @@ function insereOperador(evento) {
 }
 
 function formataTamanhoResultado(num) {
-  return (num >= 1e10) ? num.toExponential(5) : num;
+  if (num >= 1e8) return num.toExponential(5);
+  else if (!Number.isInteger(num)) return parseFloat(num.toFixed(5));
+  else return num;
 }
 
 function calcular() {

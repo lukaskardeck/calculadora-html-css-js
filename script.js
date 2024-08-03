@@ -69,6 +69,10 @@ function insereOperador(evento) {
   }
 }
 
+function formataTamanhoResultado(num) {
+  return (num >= 1e10) ? num.toExponential(5) : num;
+}
+
 function calcular() {
   let resultado;
   const anterior = Number(valorAnterior);
@@ -96,7 +100,7 @@ function calcular() {
       return;
   }
 
-  valorAtual = resultado.toString();
+  valorAtual = formataTamanhoResultado(resultado).toString();
   valorAnterior = "";
   operador = null;
   calculando = true;
